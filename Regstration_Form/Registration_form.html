@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<style type="text/css">
+	table {
+		align-content: center;
+  border: 1px solid black;
+  background-color: lightblue;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+</style>
+
+<script type="text/javascript" src="Regis_script.js">
+
+	
+</script>
+
+</head>
+<body onload="fillData()">
+<form>
+	<table>
+		<tr>
+			<td>Username: </td>
+			<td><input type="text" id="uname" required></td>
+			
+		</tr>
+		<tr>
+			<td>Password: </td>
+			<td><input type="password" id="pass" required></td>
+		</tr>
+		<tr>
+			<td>Confirm Password: </td>
+			<td><input type="password" id="pass2" onChange="checkPasswordMatch()" required></td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" id="chk" onchange="showp()"></td>
+			<td>Show Password</td>
+			<td><div id="test" ></div></td>
+		</tr>
+		<tr><td>
+			<select id="course" onchange="fillData2()">
+				<option>Select Your Category</option>p
+			</select>
+			</td>
+			<td>
+			<select id="options">
+				<option>Auto_Fill_Options</option>p
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Date Of Birth</td>
+			<td><input type="date" id="dob" onclick="dob2()" required></td>
+		</tr>
+		<tr>
+			<td>All Fields Mandatory </td>
+			<td><input type="Submit" name="Submit" onclick="return checkall()"></td>
+		</tr>
+
+
+</form>
+
+
+	</table>
+
+
+
+</body>
+</html>
